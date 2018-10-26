@@ -1,0 +1,41 @@
+body {
+  background-color: #F5F5F5;
+  color: #555;
+  font-size: 1.1em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.container {
+ 
+  max-width: 700px;
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15ch, 1fr));
+  grid-gap: 1em;
+}
+
+.flow-switcher:checked ~ .container {
+  grid-auto-flow: dense;
+}
+
+.grid__item {
+  background-color: lightgreen;
+  padding: 1em;
+}
+
+.c {
+  grid-row: span 2;
+}
+
+.j {
+  grid-column: span 3;
+}
+
+.g {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.n {
+  grid-column: span 2;
+}
